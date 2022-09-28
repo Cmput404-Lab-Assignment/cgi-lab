@@ -1,0 +1,45 @@
+question 1:
+print(f"<p>all environment variables ' = {os.environ}</p>")
+
+question 2:
+QUERY_STRING
+After we input http://localhost:8080/hello.py?Thisisatest;
+we will see QUERY_STRING = Thisisatest
+
+question 3:
+'USER's BROWSER' = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+The 'USER's BROWSER' from 'HTTP_USER_AGENT'
+
+question4:
+set a cgi form
+s = cgi.FieldStorage()
+username = s.getvalue("username")
+password = s.getvalue("password")
+print to html
+print("Content-type: text/html")
+print()
+load login page, print user information
+
+question5:
+set-Cookie: key = value
+
+Content-type: text/html
+Date	:Wed, 28 Sep 2022 22:31:16 GMT
+Server	:SimpleHTTP/0.6 Python/3.10.7
+Set-Cookie	:username=pcheng1
+Set-Cookie	:password=pcheng1
+
+question6:
+Cookie: key = value
+
+Cookie	:username=pcheng1; password=pcheng1
+Host	:cmput404:8080
+Referer	:http://localhost:8080/login.py
+Upgrade-Insecure-Requests	:1
+User-Agent	:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36
+
+question7:
+Cookies can record user name, password, and other information. When user view the website again, the website will get cookies, to know login and other information, then allowing user to login without enter the uers's name, password, etc
+
+question8:
+https://github.com/Cmput404-Lab-Assignment/cgi-lab
